@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{9c42165b-c97b-414f-ad10-da3eb2650a36}</ProjectGuid>
+    <RootNamespace>CoppeliaSim</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>MAX_EXT_API_CONNECTIONS=255;NON_MATLAB_PARSING;DO_NOT_USE_SHARED_MEMORY;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)CoppeliaSimApi_V4.2.0\remoteApi;$(SolutionDir)CoppeliaSimApi_V4.2.0\include;$(SolutionDir)QP;$(SolutionDir)include;$(SolutionDir)include\coppeliasim</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>MAX_EXT_API_CONNECTIONS=255;NON_MATLAB_PARSING;DO_NOT_USE_SHARED_MEMORY;_CRT_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)CoppeliaSimApi_V4.2.0\remoteApi;$(SolutionDir)CoppeliaSimApi_V4.2.0\include;$(SolutionDir)QP;$(SolutionDir)include;$(SolutionDir)include\coppeliasim</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CoppeliaSimApi_V4.2.0\remoteApi\extApi.h" />
+    <ClInclude Include="..\CoppeliaSimApi_V4.2.0\remoteApi\extApiInternal.h" />
+    <ClInclude Include="..\CoppeliaSimApi_V4.2.0\remoteApi\extApiPlatform.h" />
+    <ClInclude Include="..\include\chazhi.h" />
+    <ClInclude Include="..\include\controller\eigentest.h" />
+    <ClInclude Include="..\include\coppeliasim\coppeliasim.h" />
+    <ClInclude Include="..\include\coppeliasim\coppeliasim_base.h" />
+    <ClInclude Include="..\include\coppeliasim\coppeliasim_joint.h" />
+    <ClInclude Include="..\include\coppeliasim\coppeliasim_joint_manager.h" />
+    <ClInclude Include="..\include\coppeliasim\coppeliasim_link.h" />
+    <ClInclude Include="..\include\coppeliasim\coppeliasim_link_manager.h" />
+    <ClInclude Include="..\QP\eigen_quadprog_api.h" />
+    <ClInclude Include="..\QP\f2c\f2c.h" />
+    <ClInclude Include="..\QP\QuadProg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CoppeliaSimApi_V4.2.0\remoteApi\extApi.c" />
+    <ClCompile Include="..\CoppeliaSimApi_V4.2.0\remoteApi\extApiPlatform.c" />
+    <ClCompile Include="..\QP\f2c\aind.c" />
+    <ClCompile Include="..\QP\f2c\daxpy.c" />
+    <ClCompile Include="..\QP\f2c\ddot.c" />
+    <ClCompile Include="..\QP\f2c\dpofa.c" />
+    <ClCompile Include="..\QP\f2c\dscal.c" />
+    <ClCompile Include="..\QP\f2c\f2c_lite.c" />
+    <ClCompile Include="..\QP\f2c\util.c" />
+    <ClCompile Include="..\QP\QuadProg.cpp" />
+    <ClCompile Include="..\QP\solve.QP.c" />
+    <ClCompile Include="..\QP\solve.QP.compact.c" />
+    <ClCompile Include="..\src\controller\eigentest.cpp" />
+    <ClCompile Include="..\src\coppeliasim\coppeliasim.cpp" />
+    <ClCompile Include="..\src\coppeliasim\coppeliasim_joint.cpp" />
+    <ClCompile Include="..\src\coppeliasim\coppeliasim_joint_manager.cpp" />
+    <ClCompile Include="..\src\coppeliasim\coppeliasim_link.cpp" />
+    <ClCompile Include="..\src\coppeliasim\coppeliasim_link_manager.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="CoppeliaSimApi">
+      <UniqueIdentifier>{da3ed7f4-a324-4a4c-a4b8-15913152081b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoppeliaSimApi\remoteApi">
+      <UniqueIdentifier>{e1fa8dfc-871f-4c52-9766-e0daa4788068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{1bb854dc-fa11-46ce-901f-a7cff649b858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\CoppeliaSim">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{19b0cc3e-4e0d-4083-affd-0420a33e90d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CoppeliaSim">
+      <UniqueIdentifier>{088e87f4-f9a3-4e14-aa96-ecdfb8818e51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QP">
+      <UniqueIdentifier>{8993102c-8293-4b80-bd0f-438aafd0da62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QP\f2c">
+      <UniqueIdentifier>{d26fd368-74a3-4d36-bd49-04c907adf2ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Controller">
+      <UniqueIdentifier>{fe18731a-9b22-4ca0-abe9-9916ba36f498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Controller">
+      <UniqueIdentifier>{9c524236-0428-47ae-a6c7-a5951ad6badc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\CoppeliaSimApi_V4.2.0\remoteApi\extApi.h">
+      <Filter>CoppeliaSimApi\remoteApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CoppeliaSimApi_V4.2.0\remoteApi\extApiInternal.h">
+      <Filter>CoppeliaSimApi\remoteApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CoppeliaSimApi_V4.2.0\remoteApi\extApiPlatform.h">
+      <Filter>CoppeliaSimApi\remoteApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QP\eigen_quadprog_api.h">
+      <Filter>QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QP\QuadProg.h">
+      <Filter>QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QP\f2c\f2c.h">
+      <Filter>QP\f2c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\coppeliasim\coppeliasim.h">
+      <Filter>include\CoppeliaSim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\coppeliasim\coppeliasim_base.h">
+      <Filter>include\CoppeliaSim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\coppeliasim\coppeliasim_joint.h">
+      <Filter>include\CoppeliaSim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\coppeliasim\coppeliasim_joint_manager.h">
+      <Filter>include\CoppeliaSim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\coppeliasim\coppeliasim_link.h">
+      <Filter>include\CoppeliaSim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\coppeliasim\coppeliasim_link_manager.h">
+      <Filter>include\CoppeliaSim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\controller\eigentest.h">
+      <Filter>include\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\chazhi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\CoppeliaSimApi_V4.2.0\remoteApi\extApi.c">
+      <Filter>CoppeliaSimApi\remoteApi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CoppeliaSimApi_V4.2.0\remoteApi\extApiPlatform.c">
+      <Filter>CoppeliaSimApi\remoteApi</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QP\QuadProg.cpp">
+      <Filter>QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QP\solve.QP.c">
+      <Filter>QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QP\solve.QP.compact.c">
+      <Filter>QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QP\f2c\aind.c">
+      <Filter>QP\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QP\f2c\daxpy.c">
+      <Filter>QP\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QP\f2c\ddot.c">
+      <Filter>QP\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QP\f2c\dpofa.c">
+      <Filter>QP\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QP\f2c\dscal.c">
+      <Filter>QP\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QP\f2c\f2c_lite.c">
+      <Filter>QP\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QP\f2c\util.c">
+      <Filter>QP\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\coppeliasim\coppeliasim.cpp">
+      <Filter>src\CoppeliaSim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\coppeliasim\coppeliasim_joint.cpp">
+      <Filter>src\CoppeliaSim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\coppeliasim\coppeliasim_joint_manager.cpp">
+      <Filter>src\CoppeliaSim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\coppeliasim\coppeliasim_link.cpp">
+      <Filter>src\CoppeliaSim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\coppeliasim\coppeliasim_link_manager.cpp">
+      <Filter>src\CoppeliaSim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\controller\eigentest.cpp">
+      <Filter>src\Controller</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
